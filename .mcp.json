@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "cyrus": {
+      "url": "https://mcp.atcyrus.com/mcp",
+      "transport": "http",
+      "headers": {
+        "Authorization": "Bearer ${CYRUS_AUTH_KEY}"
+      }
+    }
+  }
+}
