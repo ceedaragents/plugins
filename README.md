@@ -13,7 +13,7 @@ claude --channels plugin:cyrus@ceedaragents-plugins
 Until then, use the development flag:
 
 ```bash
-claude --dangerously-load-development-channels server:cyrus
+claude --dangerously-load-development-channels plugin:cyrus@ceedaragents-plugins
 ```
 
 ## How it works
