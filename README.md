@@ -1,6 +1,6 @@
 # Cyrus Claude Code Plugin
 
-Receive real-time events from GitHub, Linear, and Slack directly in your Claude Code sessions.
+Receive real-time events from GitHub, Linear, Slack, Telegram, Discord, and more directly in your Claude Code sessions.
 
 ## Installation
 
@@ -27,7 +27,5 @@ The plugin requires a `CYRUS_AUTH_KEY` environment variable — your team's auth
 ## Architecture
 
 ```
-GitHub/Linear/Slack → cyrus-hosted webhooks → Supabase Realtime broadcast
-                                                        ↓
-Claude Code ←SSE← mcp.atcyrus.com/mcp ←── Supabase Realtime subscription
+Service (GitHub/Linear/Slack/etc) → Cyrus web app → mcp.atcyrus.com/mcp → SSE → Claude Code
 ```
