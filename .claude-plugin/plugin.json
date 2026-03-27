@@ -1,8 +1,0 @@
-{
-  "name": "cyrus",
-  "description": "Receive GitHub, Linear, and Slack events in your Claude Code session",
-  "version": "1.0.0",
-  "author": {
-    "name": "Cyrus"
-  }
-}

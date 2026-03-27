@@ -1,0 +1,8 @@
+{
+  "name": "cyrus",
+  "description": "Receive real-time events from GitHub, Linear, Slack, Discord, Telegram, Email, and more in your Claude Code session",
+  "version": "1.0.0",
+  "author": {
+    "name": "Cyrus"
+  }
+}

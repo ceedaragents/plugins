@@ -1,0 +1,13 @@
+{
+  "name": "ceedaragents-plugins",
+  "owner": {
+    "name": "Cyrus"
+  },
+  "plugins": [
+    {
+      "name": "cyrus",
+      "source": "./plugins/cyrus",
+      "description": "Receive real-time events from GitHub, Linear, Slack, Discord, Telegram, Email, and more in your Claude Code session"
+    }
+  ]
+}
