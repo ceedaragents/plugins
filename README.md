@@ -1,31 +1,30 @@
-# Cyrus Claude Code Plugin
+# Cyrus Plugins Marketplace
 
-Receive real-time events from GitHub, Linear, Slack, Telegram, Discord, and more directly in your Claude Code sessions.
+Plugins for integrating [Cyrus](https://atcyrus.com) with Claude Code.
+
+## Plugins
+
+### cyrus
+
+Receive real-time events from GitHub, Linear, Slack, Discord, Telegram, Email, and more directly in your Claude Code sessions.
 
 ## Installation
 
-Once approved by Anthropic:
-
 ```bash
-claude --channels plugin:cyrus@ceedaragents-plugins
+claude plugin marketplace add ceedaragents/plugins
+claude plugin install cyrus@ceedaragents-plugins
 ```
-
-Until then, use the development flag:
-
-```bash
-claude --dangerously-load-development-channels plugin:cyrus@ceedaragents-plugins
-```
-
-## How it works
-
-This plugin connects Claude Code to the Cyrus MCP server at `mcp.atcyrus.com`, which subscribes to your team's Supabase Realtime channel and pushes webhook events (GitHub PRs, Linear issues, Slack mentions) into your Claude Code session as channel notifications.
 
 ## Configuration
 
 The plugin requires a `CYRUS_AUTH_KEY` environment variable — your team's auth key from the Cyrus dashboard.
 
+## How it works
+
+The cyrus plugin connects Claude Code to the Cyrus MCP server at `mcp.atcyrus.com`, which subscribes to your team's Supabase Realtime channel and pushes webhook events (GitHub PRs, Linear issues, Slack messages, Discord messages, Telegram messages, emails, and more) into your Claude Code session as channel notifications.
+
 ## Architecture
 
 ```
-Service (GitHub/Linear/Slack/etc) → Cyrus web app → mcp.atcyrus.com/mcp → SSE → Claude Code
+Service (GitHub/Linear/Slack/Discord/Telegram/Email/etc) → Cyrus → mcp.atcyrus.com/mcp → Claude Code
 ```
