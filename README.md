@@ -15,9 +15,21 @@ claude plugin marketplace add ceedaragents/plugins
 claude plugin install cyrus@ceedaragents-plugins
 ```
 
+## Usage
+
+> **Note:** This plugin is not yet on Anthropic's approved channels allowlist. Until it is, you must use the `--dangerously-load-development-channels` flag.
+
+```bash
+claude --dangerously-load-development-channels plugin:cyrus@ceedaragents-plugins
+```
+
 ## Configuration
 
-The plugin requires a `CYRUS_AUTH_KEY` environment variable — your team's auth key from the Cyrus dashboard.
+Set your `CYRUS_AUTH_KEY` environment variable with your team's auth key from the Cyrus dashboard:
+
+```bash
+export CYRUS_AUTH_KEY="your-key-here"
+```
 
 ## How it works
 
