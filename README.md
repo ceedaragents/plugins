@@ -39,7 +39,7 @@ export CYRUS_AUTH_KEY="your-key-here"
 
 ## How it works
 
-The cyrus plugin connects Claude Code to the Cyrus MCP server at `mcp.atcyrus.com`, which subscribes to your team's Supabase Realtime channel and pushes webhook events (GitHub PRs, Linear issues, Slack messages, Discord messages, Telegram messages, emails, and more) into your Claude Code session as channel notifications.
+The cyrus plugin connects Claude Code to the Cyrus MCP server at `mcp.atcyrus.com`, which pushes real-time events (GitHub PRs, Linear issues, Slack messages, Discord messages, Telegram messages, emails, and more) into your Claude Code session as channel notifications.
 
 ## Architecture
 
