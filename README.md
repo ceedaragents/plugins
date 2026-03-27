@@ -23,6 +23,12 @@ claude plugin install cyrus@ceedaragents-plugins
 claude --dangerously-load-development-channels plugin:cyrus@ceedaragents-plugins
 ```
 
+<!-- Once approved on Anthropic's allowlist, replace the above with:
+```bash
+claude --channels plugin:cyrus@ceedaragents-plugins
+```
+-->
+
 ## Configuration
 
 Set your `CYRUS_AUTH_KEY` environment variable with your team's auth key from the Cyrus dashboard:
