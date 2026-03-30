@@ -10,14 +10,21 @@ Receive real-time events from GitHub, Linear, Slack, Discord, Telegram, Email, a
 
 ## Installation
 
+From outside of a claude code session, in a normal terminal session
 ```bash
 claude plugin marketplace add ceedaragents/plugins
 claude plugin install cyrus@ceedaragents-plugins
+```
+OR, from inside of a claude code session
+```
+/plugin marketplace add ceedaragents/plugins
+/plugin install cyrus@ceedaragents-plugins
 ```
 
 ## Usage
 
 > **Note:** This plugin is not yet on Anthropic's approved channels allowlist. Until it is, you must use the `--dangerously-load-development-channels` flag.
+<!-- https://code.claude.com/docs/en/channels-reference#test-during-the-research-preview -->
 
 ```bash
 claude --dangerously-load-development-channels plugin:cyrus@ceedaragents-plugins
