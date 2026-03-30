@@ -21,6 +21,14 @@ OR, from inside of a claude code session
 /plugin install cyrus@ceedaragents-plugins
 ```
 
+## Configuration
+
+Set your `CYRUS_AUTH_KEY` environment variable with your team's auth key from the Cyrus dashboard:
+
+```bash
+export CYRUS_AUTH_KEY="your-key-here"
+```
+
 ## Usage
 
 > **Note:** This plugin is not yet on Anthropic's approved channels allowlist. Until it is, you must use the `--dangerously-load-development-channels` flag.
@@ -36,17 +44,9 @@ claude --channels plugin:cyrus@ceedaragents-plugins
 ```
 -->
 
-## Configuration
-
-Set your `CYRUS_AUTH_KEY` environment variable with your team's auth key from the Cyrus dashboard:
-
-```bash
-export CYRUS_AUTH_KEY="your-key-here"
-```
-
 ## How it works
 
-The cyrus plugin connects Claude Code to the Cyrus MCP server at `mcp.atcyrus.com`, which pushes real-time events (GitHub PRs, Linear issues, Slack messages, Discord messages, Telegram messages, emails, and more) into your Claude Code session as channel notifications.
+The cyrus plugin connects Claude Code to the Cyrus MCP server at `mcp.atcyrus.com/mcp`, which pushes real-time events (GitHub PRs, Linear issues, Slack messages, Discord messages, Telegram messages, emails, and more) into your Claude Code session as channel notifications.
 
 ## Architecture
 
